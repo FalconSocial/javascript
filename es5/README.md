@@ -626,7 +626,7 @@
     if (test)
       return false;
 
-    // good
+    // bad
     if (test) return false;
 
     // good
@@ -764,22 +764,23 @@
 
 ## Whitespace
 
-  - Use soft tabs set to 2 spaces.
+  - Use soft tabs set to 4 spaces.
 
     ```javascript
-    // bad
-    function() {
-    ∙∙∙∙var name;
-    }
 
     // bad
     function() {
     ∙var name;
     }
 
-    // good
+    // bad
     function() {
     ∙∙var name;
+    }
+
+    // good
+    function() {
+        ∙∙∙∙var name;
     }
     ```
 
@@ -788,24 +789,24 @@
     ```javascript
     // bad
     function test(){
-      console.log('test');
+        console.log('test');
     }
 
     // good
     function test() {
-      console.log('test');
+        console.log('test');
     }
 
     // bad
     dog.set('attr',{
-      age: '1 year',
-      breed: 'Bernese Mountain Dog'
+        age: '1 year',
+        breed: 'Bernese Mountain Dog'
     });
 
     // good
     dog.set('attr', {
-      age: '1 year',
-      breed: 'Bernese Mountain Dog'
+        age: '1 year',
+        breed: 'Bernese Mountain Dog'
     });
     ```
 
@@ -1456,7 +1457,7 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## jQuery
+## jQuery 
 
   - Prefix jQuery object variables with a `$`.
 
