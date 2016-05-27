@@ -2540,6 +2540,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Amendments
 
-We encourage you to fork this guide and change the rules to fit your team's style guide. Below, you may list some amendments to the style guide. This allows you to periodically update your style guide without having to deal with merge conflicts.
+### Whitespace (Indentation)
 
-# };
+We use 4 spaces instead of the recommended 2. See [18.1](#18.1). 
+
+### Trailing Commas
+
+**Hell, NO.** We're not going for trailing commas. See [19.2](#19.2).
