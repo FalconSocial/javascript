@@ -2550,22 +2550,24 @@ We use 4 spaces instead of the recommended 2. See [18.1](#18.1).
 
 ### Whitespace (Functions)
 
-**Always** put a space before the opening parentheses of a function expression or declaration, regardless of the function being named or not. 
+We **prefer** to always put a space before the opening parentheses of a function expression or declaration, regardless of the function being named or not. 
+
+If you choose to not use a space, a warning will be thrown by our linter. It's OK to not use a space, but it's not recommended.
 
 ```js
-// bad
+// kind-of-bad
 function() {}
 
 // good
 function () {}
 
-// bad
+// kind-of-bad
 const foo = function() {}
 
 // good
 const foo = function () {}
 
-// bad
+// kind-of-bad
 function bar() {}
 
 // good
