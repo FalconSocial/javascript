@@ -2547,3 +2547,29 @@ We use 4 spaces instead of the recommended 2. See [18.1](#18.1).
 ### Trailing Commas
 
 **Hell, NO.** We're not going for trailing commas. See [19.2](#19.2).
+
+### Whitespace (Functions)
+
+**Always** put a space before the opening parentheses of a function expression or declaration, regardless of the function being named or not. 
+
+```js
+// bad
+function() {}
+
+// good
+function () {}
+
+// bad
+const foo = function() {}
+
+// good
+const foo = function () {}
+
+// bad
+function bar() {}
+
+// good
+function bar () {}
+```
+
+This amendment changes [18.3](#18.3) & [7.11](#7.11) a bit. 
