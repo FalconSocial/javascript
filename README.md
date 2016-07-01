@@ -2575,3 +2575,17 @@ function bar () {}
 ```
 
 This amendment changes [18.3](#18.3) & [7.11](#7.11) a bit. 
+
+### Line max-length
+
+Still 100 characters as per the AirBnb default.
+
+Lines that include [`import` statements](https://developer.mozilla.org/en/docs/web/javascript/reference/statements/import) are **not** affected by this rule. 
+
+```js
+// OK!
+import { foo, bar, baz, qux } from './deep/path/is/very/long/and/troublesome/to/remember/foobarbazquxManagerMan.es6';
+
+// not-OK!
+const { foo, bar, baz, qux } = SomeObjectWithAVeryLongNameThatKindOfLooksLikeAJavaClassOrFunctionOrWhateverTheseJavaDudesHave;
+```
